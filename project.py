@@ -5,9 +5,9 @@ with open('data2.csv',newline='') as f:
     file_data=list(reader)
 totalMarks=0
 totalEnteries=len(file_data)
-print(totalEnteries)
+print(file_data)
 for marks in file_data:
-    totalMarks+=float(marks[1])
+    totalMarks+=float(marks[0])
 mean=totalMarks/totalEnteries
 print('Mean is',mean)
 square_list=[]
